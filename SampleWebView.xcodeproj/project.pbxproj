@@ -14,6 +14,7 @@
 		993118AA1BA6EF96006A9B05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993118A91BA6EF96006A9B05 /* Images.xcassets */; };
 		993118AD1BA6EF96006A9B05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993118AB1BA6EF96006A9B05 /* LaunchScreen.xib */; };
 		993118B91BA6EF96006A9B05 /* SampleWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 993118B81BA6EF96006A9B05 /* SampleWebViewTests.m */; };
+		993118C71BA6F3A5006A9B05 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993118C61BA6F3A5006A9B05 /* webViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		993118B21BA6EF96006A9B05 /* SampleWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		993118B71BA6EF96006A9B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		993118B81BA6EF96006A9B05 /* SampleWebViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleWebViewTests.m; sourceTree = "<group>"; };
+		993118C51BA6F3A5006A9B05 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		993118C61BA6F3A5006A9B05 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				993118A11BA6EF96006A9B05 /* AppDelegate.m */,
 				993118A31BA6EF96006A9B05 /* ViewController.h */,
 				993118A41BA6EF96006A9B05 /* ViewController.m */,
+				993118C51BA6F3A5006A9B05 /* webViewController.h */,
+				993118C61BA6F3A5006A9B05 /* webViewController.m */,
 				993118A61BA6EF96006A9B05 /* Main.storyboard */,
 				993118A91BA6EF96006A9B05 /* Images.xcassets */,
 				993118AB1BA6EF96006A9B05 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				993118A51BA6EF96006A9B05 /* ViewController.m in Sources */,
 				993118A21BA6EF96006A9B05 /* AppDelegate.m in Sources */,
 				9931189F1BA6EF96006A9B05 /* main.m in Sources */,
+				993118C71BA6F3A5006A9B05 /* webViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

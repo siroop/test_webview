@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "webViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    webViewController *vc = [webViewController new];
+    self.webView.delegate = vc;
+    
+    [self loadContents];
+}
+
+- (void)loadContents {
+    NSURL *url = [NSURL URLWithString:@"http://google.com"];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:req];
 }
 
 - (void)didReceiveMemoryWarning {
